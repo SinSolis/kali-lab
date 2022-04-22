@@ -18,6 +18,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     kali_config.vm.box = "#{os}"
     kali_config.vm.host_name = 'kali.local'
     kali_config.vm.network "private_network", ip: "#{net_ip}.23"
-    kali_config.vm.network "public_network", bridge: "Intel(R) Wi-Fi 6 AX201 160MHz"
+    kali_config.vm.network "public_network"
     end
 end
